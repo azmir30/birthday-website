@@ -235,14 +235,19 @@
       document.getElementById('video-container').classList.remove('hidden');
     });
 
-    const bgMusic = document.getElementById('bg-music');
-    document.body.addEventListener('click', () => {
-      if (bgMusic.paused) {
-        bgMusic.play().catch(err => {
-          console.log('Audio play error:', err);
-        });
-      }
-    }, { once: true });
+    // Start music on first user interaction
+document.body.addEventListener('click', () => {
+  if (bgMusic.paused) {
+    bgMusic.play().catch(() => {});
+  }
+});
+
+// Pause music when video plays
+video.addEventListener("play", () => {
+  if (!bgMusic.paused) {
+    bgMusic.pause();
+  }
+});
   </script>
 </body>
 </html>
