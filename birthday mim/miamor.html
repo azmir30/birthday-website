@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎂 Happy Birthday!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+      color: #d63384;
+      text-align: center;
+      padding: 40px;
+      background-image: url('https://www.transparenttextures.com/patterns/pink-dust.png');
+    }
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      color: #ff69b4;
+      animation: fadeIn 2s ease-in-out;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .photos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .photos img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .photos img:hover {
+      transform: scale(1.05);
+    }
+    .video {
+      margin-bottom: 30px;
+    }
+    video {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .footer {
+      margin-top: 30px;
+      font-style: italic;
+      color: #b03060;
+    }
+    .confetti {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+    .heart {
+      position: absolute;
+      font-size: 20px;
+      color: #ff69b4;
+      animation: floatUp 4s linear infinite;
+      user-select: none;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .quote-box {
+      background: #fff0fa;
+      border: 2px dashed #ffb6c1;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+    }
+    #reveal-button {
+      margin: 30px auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    #reveal-button img {
+      width: 280px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    #reveal-button:hover {
+      transform: scale(1.05);
+    }
+    .hidden {
+      display: none;
+    }
+    .message-box {
+      background: #fff5fb;
+      border: 2px solid #ffa6c9;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(255, 192, 203, 0.4);
+    }
+    .memories-section, .wishlist-section, .thankyou-section {
+      margin-top: 50px;
+      padding: 20px;
+      background: #ffeef8;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .memories-section h2, .wishlist-section h2, .thankyou-section h2 {
+      font-family: 'Pacifico', cursive;
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+    ul {
+      text-align: left;
+      list-style-type: square;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday Sayang! 🎉</h1>
+  <p>Happy birthday to someone incredibly special. May your day be filled with happiness and love.💖🎂🥳
+</p>
+
+  <div class="quote-box">
+    <p><em>Every year with you is a gift. Happy birthday to the person who makes my life brighter🤍</em></p>
+  </div>
+
+  <div class="message-box">
+    <p>On this magical day, I just want to say thank you for being you. Your love, your kindness, your smile, your support, your understanding, your patience and your consistent encouragement. You've made my life better, i really appreciate it 🫶</p>
+    <p>Let’s celebrate you—the amazing, pretty, cute, stunning, lovely, pancak pancak, lovely, gorgeous soul that makes my life so much more beautiful. 💐</p>
+  </div>
+
+  <div class="photos">
+    <img src="gambar1.jpg" alt="Sweet Memory 1">
+    <img src="gambar2.jpg" alt="Sweet Memory 2">
+    <img src="gambar3.jpg" alt="Sweet Memory 3">
+  </div>
+
+  <div id="reveal-button">
+    <img src="photo2.jpg" alt="Tap to reveal the surprise!">
+  </div>
+
+  <div class="video hidden" id="video-container">
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  
+
+  <div class="memories-section">
+    <h2>🌸 Beautiful Memories</h2>
+    <p>Remember those quiet moments we share, just being together? Or that time we laughed until our stomachs hurt? Life with you is full of magic🪄</p>
+    <ul>
+      <li>👜 Our Shopping Adventures</li>
+      <li>🎳 Fun at the Bowling Alley</li>
+      <li>⚽ Cheering at MU Match</li>
+      <li>🍗 Savoring Ayam Gepuk Togethers</li>
+      <li>🍣 Our Quirky Convenience Store Dates</li>
+      <li>🎥 Cozy Cinema Dates</li>
+    </ul>
+  </div>
+
+  <div class="wishlist-section">
+    <h2>❤️ My Birthday Wishes for My Love ❤️</h2>
+    <ul>
+      <li>I hope this year is your happiest yet, and I promise to contribute to that every day</li>
+      <li>May you feel empowered and joyful, knowing how incredible you are</li>
+      <li>I wish you success in your life and the joy of seeing your dreams realized</li>
+      <li>And I can't wait to create a lifetime of beautiful surprises and memories with you 💕</li>
+    </ul>
+  </div>
+
+  <div class="thankyou-section">
+    <h2>💖 Just One More Thing...</h2>
+    <p>Thank you for being such an incredible person in my life and in the lives of everyone you touch. You truly deserve all the happiness and good things that come your way, today and always. 🌟</p>
+    <p>Keep smiling, keep shining. My world is better because of you sayang. 🎀</p>
+  </div>
+
+  <div class="footer">
+    <p>With all my love,</p>
+    <p>💌 From: Your Baby Boy 💕</p>
+  </div>
+
+  <canvas class="confetti" id="confetti-canvas"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    const canvas = document.getElementById('confetti-canvas');
+    const myConfetti = confetti.create(canvas, {
+      resize: true,
+      useWorker: true
+    });
+    myConfetti({
+      particleCount: 200,
+      spread: 120,
+      origin: { y: 0.6 }
+    });
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + 'vw';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 4000);
+    }
+    setInterval(createHeart, 300);
+
+    document.getElementById('reveal-button').addEventListener('click', () => {
+      document.getElementById('reveal-button').classList.add('hidden');
+      document.getElementById('video-container').classList.remove('hidden');
+    });
+
+    const bgMusic = document.getElementById('bg-music');
+    document.body.addEventListener('click', () => {
+      if (bgMusic.paused) {
+        bgMusic.play().catch(err => {
+          console.log('Audio play error:', err);
+        });
+      }
+    }, { once: true });
+  </script>
+</body>
+</html>
